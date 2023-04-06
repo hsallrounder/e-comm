@@ -13,11 +13,11 @@ const User = require("./models/User")
 const passport = require("passport");
 var LocalStrategy = require('passport-local');
 
-const dbUrl = process.env.DB_URI || "mongodb://127.0.0.1:27017/shopping-cart"
+const dbUrl = process.env.DB_URI
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT
 
-const sessionSecret = process.env.SESSION_SECRET || 'this is a secret session'
+const sessionSecret = process.env.SESSION_SECRET
 mongoose.set('strictQuery', true);
 
 //Connect to DB
